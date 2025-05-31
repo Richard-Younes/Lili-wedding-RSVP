@@ -1,0 +1,120 @@
+@font-face {
+	font-family: 'marion';
+	src: url('./assets/Marion.otf') format('opentype');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'bp-normal';
+	src: url('./assets/BP-Ecatherina-ex1-Regular-AF65fa9e2801136.otf')
+		format('opentype');
+	font-display: swap;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', sans-serif;
+}
+
+body,
+html,
+#root {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	overflow: hidden;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.app-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100%;
+	position: relative;
+}
+
+/* Video styling */
+.custom-video-wrapper {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	margin-top: -10%;
+}
+
+.custom-video-wrapper video {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Custom play button overlay */
+.custom-play-button {
+	position: absolute;
+	top: 58%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 0.8rem 2rem;
+	font-size: 1.2rem;
+	background: rgba(0, 0, 0, 0);
+	border: 1px solid #5a4f3c;
+	border-radius: 30px;
+	font-size: 13px;
+	font-weight: 400;
+	color: #5a4f3c;
+	font-family: 'marion', sans-serif;
+	letter-spacing: 10%;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.custom-play-button:hover,
+.custom-play-button:focus {
+	background: #5a4f3c;
+	color: #ffffff;
+}
+
+.dear {
+	font-size: 13px;
+	font-family: 'marion', sans-serif;
+	color: #5a4f3c;
+}
+
+footer {
+	margin-top: -10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.invitee {
+	font-family: 'bp-normal';
+	font-weight: 200;
+	font-size: 13px;
+	margin-top: -10px;
+	color: #000;
+}
+.username {
+	font-family: 'bp-normal';
+	font-weight: 200;
+	font-size: 13px;
+	margin-top: 0;
+	color: #000;
+}
+
+.message {
+	font-family: 'marion', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 12px;
+	position: relative;
+	color: #000;
+	margin-top: -45px; /* Use a smaller negative margin */
+}
