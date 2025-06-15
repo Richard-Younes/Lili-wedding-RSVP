@@ -118,3 +118,122 @@ footer {
 	color: #000;
 	margin-top: -45px; /* Use a smaller negative margin */
 }
+
+/*************** RSVP ***************/
+
+.RSVP {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	align-items: center;
+}
+.rsvp-header {
+	font-family: 'marion', sans-serif;
+	font-weight: 400;
+	color: #000;
+	font-size: 16px;
+}
+
+.total-invite {
+	font-family: 'marion', sans-serif;
+	font-weight: 200;
+	color: #000;
+	font-style: italic;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.formContainer {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+}
+.form-label {
+	font-family: 'marion', sans-serif;
+	font-weight: 400;
+	color: #5a4f3c;
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-style: italic;
+}
+
+.formButton {
+	padding: 0.5rem 1.3rem;
+	font-size: 1.2rem;
+	background: rgba(0, 0, 0, 0);
+	border: 1px solid #5a4f3c;
+	border-radius: 30px;
+	font-size: 13px;
+	font-weight: 400;
+	color: #5a4f3c;
+	font-family: 'marion', sans-serif;
+	letter-spacing: 10%;
+	cursor: pointer;
+	z-index: 2;
+	user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.formButton:hover,
+.formButton.selected {
+	background: #5a4f3c;
+	color: #ffffff;
+}
+
+.formSubmitButton {
+	padding: 0.5rem 1rem;
+	font-size: 1.2rem;
+	background: rgba(0, 0, 0, 0);
+	border: 1px solid #5a4f3c;
+	border-radius: 30px;
+	font-size: 13px;
+	font-weight: 400;
+	color: #5a4f3c;
+	font-family: 'marion', sans-serif;
+	letter-spacing: 10%;
+	cursor: pointer;
+	z-index: 2;
+	user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.formSubmitButton:hover {
+	background: #5a4f3c;
+	color: #ffffff;
+}
+
+/*************** RSVP ***************/
+.thankyou {
+	background-color: #5a4f3c;
+	border: 1px solid #5a4f3c;
+	color: #ffffff;
+	border-radius: 30px;
+
+	padding: 15px 40px;
+}
+
+.thanks {
+	font-family: 'marion', sans-serif;
+	font-weight: 400;
+	color: #ffffff;
+	font-size: 13px;
+	text-align: center;
+}
+
+.thanksItalic {
+	font-family: 'marion', sans-serif;
+	font-weight: 400;
+	color: #ffffff;
+	font-size: 12px;
+	text-align: center;
+	font-style: italic;
+	margin-top: 5px;
+}
