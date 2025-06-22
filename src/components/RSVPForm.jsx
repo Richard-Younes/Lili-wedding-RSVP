@@ -91,7 +91,7 @@ function RSVPForm({ videoEnded, firstGuest, secondGuest, id, onSuccess }) {
 					</button>
 					<p
 						className='form-label'
-						style={{ fontSize: isThreeWordName(firstGuest) ? '13px' : '16px' }}>
+						style={{ fontSize: isThreeWordName(firstGuest) ? '13px' : '15px' }}>
 						{firstGuest}
 					</p>
 				</div>
@@ -116,7 +116,7 @@ function RSVPForm({ videoEnded, firstGuest, secondGuest, id, onSuccess }) {
 					<p
 						className='form-label'
 						style={{
-							fontSize: isThreeWordName(secondGuest) ? '13px' : '16px',
+							fontSize: isThreeWordName(secondGuest) ? '13px' : '15px',
 						}}>
 						{secondGuest}
 					</p>

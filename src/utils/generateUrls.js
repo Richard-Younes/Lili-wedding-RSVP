@@ -1,7 +1,7 @@
 import { supabase } from '../supabase/client';
 
 export async function generateAndSaveUrls() {
-	const baseUrl = 'http://localhost:5173/?guestId=';
+	const baseUrl = 'https://jaleelandlili.com/?guestId=';
 
 	let { data: invitees, error } = await supabase
 		.from('invitees')

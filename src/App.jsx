@@ -13,7 +13,6 @@ function App() {
 		const params = new URLSearchParams(window.location.search);
 		return params.get('guestId');
 	};
-
 	useEffect(() => {
 		const fetchGuest = async () => {
 			const guestId = getGuestId();

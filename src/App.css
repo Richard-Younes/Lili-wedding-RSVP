@@ -237,3 +237,93 @@ footer {
 	font-style: italic;
 	margin-top: 5px;
 }
+
+/*************** SearchPage ***************/
+.search-page {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+}
+.name {
+	font-family: 'bp-normal';
+	font-weight: 200;
+	color: #5a4f3c;
+	font-size: 26px;
+	white-space: nowrap;
+}
+.invite-details {
+	margin-top: -50%;
+	margin-left: 40%;
+	margin-bottom: 50px;
+}
+.invite {
+	font-family: 'marion', sans-serif;
+	font-weight: 400;
+	color: #5a4f3c;
+	font-size: 17px;
+}
+.date {
+	font-family: 'marion', sans-serif;
+	font-weight: 700;
+	color: #5a4f3c;
+	font-size: 17px;
+}
+
+.search-header {
+}
+
+.search-input {
+	position: relative;
+}
+
+.label {
+	font-family: 'marion', sans-serif;
+	font-weight: 700;
+	color: #5a4f3c;
+	font-size: 13px;
+	display: block;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+
+#input {
+	border: 1px solid #5a4f3c;
+	border-radius: 30px;
+	padding: 10px 20px;
+	font-family: 'marion', sans-serif;
+	font-weight: 400;
+	color: #5a4f3c;
+	font-size: 13px;
+	width: 288px;
+	transition: border-color 0.3s ease;
+}
+
+.suggestions {
+	position: absolute;
+	top: 100%; /* appear just below the input */
+	left: 0;
+	width: 90%;
+	max-height: 200px;
+	overflow-y: auto;
+	border-radius: 5px;
+	z-index: 10;
+	margin-left: 5%;
+	border: 1px solid #776b56;
+	background-color: #f3f1f1;
+}
+
+.suggestions li {
+	padding: 10px;
+	cursor: pointer;
+	color: #5a4f3c;
+	font-family: 'marion', sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	letter-spacing: 10%;
+}
