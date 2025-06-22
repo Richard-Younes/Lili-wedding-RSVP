@@ -13,7 +13,7 @@ function VideoPlayer({
 }) {
 	const videoRef = useRef(null);
 	const [isPlaying, setIsPlaying] = useState(false);
-	const [videoEnded, setVideoEnded] = useState(false);
+	const [videoEnded, setVideoEnded] = useState(true);
 	const [formSubmitted, setFormSubmitted] = useState(false);
 
 	const handlePlay = () => {
