@@ -1,16 +1,16 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
-import { BrowserRouter, Route, Routes } from 'react-router';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router';
 import SearchPage from './components/SearchPage.jsx';
 
 createRoot(document.getElementById('root')).render(
 	<StrictMode>
-		<BrowserRouter>
+		<HashRouter>
 			<Routes>
 				<Route path='/' element={<SearchPage />} />
 				<Route path='/invite' element={<App />} />
 			</Routes>
-		</BrowserRouter>
+		</HashRouter>
 	</StrictMode>
 );
