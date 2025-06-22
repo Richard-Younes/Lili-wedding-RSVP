@@ -30,7 +30,7 @@ function VideoPlayer({
 						? '/wedding-invite.mp4'
 						: '/wedding-invite-blank-page-ending-trim.mp4'
 				}
-				controls={false}
+				controls={true}
 				onLoadedData={onLoad}
 				onEnded={() => setVideoEnded(true)}
 				playsInline
