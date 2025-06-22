@@ -23,7 +23,7 @@ function VideoPlayer({
 
 	return (
 		<div className='custom-video-wrapper'>
-			<video
+			{/* <video
 				ref={videoRef}
 				src={
 					answeredInvite
@@ -33,7 +33,7 @@ function VideoPlayer({
 				controls={false}
 				onLoadedData={onLoad}
 				onEnded={() => setVideoEnded(true)}
-			/>
+			/> */}
 			{!answeredInvite && !formSubmitted && (
 				<RSVPForm
 					videoEnded={videoEnded}
