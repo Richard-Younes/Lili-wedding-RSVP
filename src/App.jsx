@@ -64,14 +64,14 @@ function App() {
 					</div>
 				)}
 
-				<VideoPlayer
+				{/* <VideoPlayer
 					onLoad={handleVideoLoad}
 					loading={loading}
 					firstGuest={firstGuest}
 					secondGuest={secondGuest}
 					answeredInvite={answeredInvite}
 					id={id}
-				/>
+				/> */}
 
 				{!loading && dataLoaded && (
 					<footer>
