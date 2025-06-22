@@ -13,7 +13,7 @@ function VideoPlayer({
 }) {
 	const videoRef = useRef(null);
 	const [isPlaying, setIsPlaying] = useState(false);
-	const [videoEnded, setVideoEnded] = useState(true);
+	const [videoEnded, setVideoEnded] = useState(false);
 	const [formSubmitted, setFormSubmitted] = useState(false);
 
 	const handlePlay = () => {
@@ -23,17 +23,19 @@ function VideoPlayer({
 
 	return (
 		<div className='custom-video-wrapper'>
-			{/* <video
+			<video
 				ref={videoRef}
 				src={
 					answeredInvite
 						? '/wedding-invite.mp4'
-						: '/wedding invite- blank-page-ending - Trim.mp4'
+						: '/wedding-invite-blank-page-ending-trim.mp4'
 				}
 				controls={false}
 				onLoadedData={onLoad}
 				onEnded={() => setVideoEnded(true)}
-			/> */}
+				playsInline
+				muted
+			/>
 			{!answeredInvite && !formSubmitted && (
 				<RSVPForm
 					videoEnded={videoEnded}
