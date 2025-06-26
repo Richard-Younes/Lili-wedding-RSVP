@@ -5,6 +5,7 @@ import './App.css';
 import { Toaster } from 'react-hot-toast';
 
 import ClipLoader from 'react-spinners/ClipLoader';
+import BackgroundMusic from './components/BackgroundMusic';
 function App() {
 	const [guest, setGuest] = useState(null);
 	const [loading, setLoading] = useState(true);
