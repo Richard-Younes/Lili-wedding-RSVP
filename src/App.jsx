@@ -73,21 +73,6 @@ function App() {
 					answeredInvite={answeredInvite}
 					id={id}
 				/>
-
-				{!loading && dataLoaded && (
-					<footer>
-						<p className='username'>Jaleel & Lili</p>
-						<p className='message'>
-							On July 19th, 2025
-							<br />
-							At 7pm
-							<br />
-							At Villa Dr. Nader Nabih Chehayeb
-							<br />
-							in Ain Hala, Aley
-						</p>
-					</footer>
-				)}
 			</div>
 		</>
 	);
