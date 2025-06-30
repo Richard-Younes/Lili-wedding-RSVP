@@ -39,7 +39,7 @@ function SearchPage() {
 				<p className='name'>Jaleel & Lili’s</p>
 				<div className='invite-details'>
 					<p className='invite'>wedding</p>
-					<p className='date'>19.07.20</p>
+					<p className='date'>19.07.2025</p>
 				</div>
 			</div>
 
