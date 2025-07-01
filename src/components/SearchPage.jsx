@@ -18,6 +18,11 @@ function SearchPage() {
 			return;
 		}
 
+		if (value.trim().length < 3) {
+			setSuggestions([]);
+			return;
+		}
+
 		const { data } = await supabase
 			.from('invitees')
 			.select('display_name, first_guest, second_guest')
